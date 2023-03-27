@@ -108,8 +108,10 @@
 								
 						</ul>
 						<ul class="zcdl nav navbar-nav pull-right">
-							<li><a href="../templates/login.html">登录</a></li>
-							<li><a href="../templates/register.html">注册</a></li>
+
+                            <li><a href="{{ url_for('login') }}">登陆</a></li>
+                            <li><a href="{{ url_for('register') }}">注册</a></li>
+
 						</ul>
 					</div>					
 				</div>

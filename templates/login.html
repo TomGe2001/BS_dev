@@ -3,14 +3,17 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<link rel="stylesheet" href="css/bootstrap.css" />
-		<link rel="stylesheet" href="css/login.css" />
-		<link rel="stylesheet" href="css/footer&cbl.css" />
-		<link rel="stylesheet" href="css/daohang.css" />
-		<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>		
-		<script type="text/javascript" src="js/bootstrap.js" ></script>
-		<script type="text/javascript" src="js/templet.js" ></script>
-		<script type="text/javascript" src="js/hp.js" ></script>
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/daohang.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/footer&cbl.css') }}">
+
+        <script src="{{ url_for('static', filename='js/jquery-1.11.3.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/templet.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/hp.js') }}"></script>
+
 		<title></title>
 	</head>
 	<body>
@@ -72,7 +75,7 @@
 			<div class="container">
 				<div class="c2">
 					<a href=""></a><span>
-						<img src="img/qifeiye.png" />
+						<img src="../static/img/qifeiye.png" />
 					</span></a>
 					<p>从这里开启建站之旅</p>	
 				</div>
@@ -125,7 +128,7 @@
 			</a></li>
 			<i class="clearfix"></i>
 			<li ><a  href="#">
-				<div class="icon d4" data-toggle="tooltip" data-placement = "left" title="<img src='img/erweima.png'><br/> 关注微信 " data-html="true"><i class="i4"></i></div>
+				<div class="icon d4" data-toggle="tooltip" data-placement = "left" title="<img src='../static/img/erweima.png'><br/> 关注微信 " data-html="true"><i class="i4"></i></div>
 			</a></li>
 		</ul>
 		</div>
