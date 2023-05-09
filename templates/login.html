@@ -80,20 +80,23 @@
 					<p>从这里开启建站之旅</p>	
 				</div>
 				<div class="c3">
-					<form>
+					<form method="POST">
 						<div class="form-group">
-    						<label for="usernameoremail">用户名或邮箱</label>
-    						<input type="text" class="form-control" id="usernameoremail">
+    						<label for="username">用户名</label>
+    						<input type="text" class="form-control" id="username" placeholder="请输入用户名">
   						</div>
   						<div class="form-group">
     						<label for="password">密码</label>
-    						<input type="password" class="form-control" id="password">
+    						<input type="password" class="form-control" id="password" placeholder="请输入密码（小于12位）">
   						</div>
-  						<div class="checkbox">
-    						<label>
-     		 					<input type="checkbox"> 记住我（请在私人计算机上使用此功能）
-    						</label>
-  						</div>
+
+                                 <!--jinja2的函数-->
+                             {% if message %} {{message}} {% endif %}
+{#  						<div class="checkbox">#}
+{#    						<label>#}
+{#     		 					<input type="checkbox"> 记住我（请在私人计算机上使用此功能）#}
+{#    						</label>#}
+{#  						</div>#}
   						<div class="c3-1">
 							<button id="denglu" type="submit" class="btn btn-default btn1">登录</button>  
 							<a href="register.html" type="button" class="btn btn-default btn2">注册</a>
@@ -111,6 +114,7 @@
 							<a href="" class="pull-right">忘记密码？点这里找回</a>
 						</div>
 					</form>
+
 				</div>
 			</div>
 		</div>
